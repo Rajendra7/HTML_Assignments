@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registration Form</title>
+</head>
+<body>
+    
+        
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
+
+    <form align="center"><h1>STUDENT REGISTRATION FORM</h1>
+    
+    <table align="center" cellpadding="10">
+        <tr>
+            <td>FIRST NAME</td>
+            <td><input type="text" name="First_Name" pattern="[A-Za-z]{3}" maxlength="25"/>
+            </td>
+        </tr>
+        <tr>
+            <td>LAST NAME</td>
+            <td><input type="text" name="Last_Name" pattern="[A-Za-z]{3}" maxlength="25"/>
+            </td>
+        </tr>
+        <tr>
+            <td>ADDRESS <br /><br /><br /></td>
+            <td><textarea name="Address" rows="4" cols="50"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>EMAIL ID</td>
+            <td><input type="email" name="Email_Id" title="enter valid email account" maxlength="100" /></td>
+        </tr>
+        <tr>
+            <td>CITY</td>
+            <td>
+                <select name="Select city" id="city">
+                    <option value="-1">City</option>
+                    <option value="1">Mumbai</option>
+                    <option value="2">Bangalore</option>
+                    <option value="3">Hyderabad</option>
+                    <option value="4">Chennai</option>
+                    <option value="5">pune</option>
+                    <option value="6">Kolkata</option>
+                    <option value="7">Delhi</option>
+                    <option value="8">Amaravati</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>STATE</td>
+            <td>
+                <select name="Select state" id="state">
+                    <option value="-1">state</option>
+                    <option value="1">Maharastra</option>
+                    <option value="2">karnataka</option>
+                    <option value="3">Telangana</option>
+                    <option value="4">Tamil Nadu</option>
+                    <option value="5">Delhi</option>
+                    <option value="6">West Bengal</option>
+                    <option value="7">Kerala</option>
+                    <option value="8">Andhra Pradesh</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>UNIVERSITY BRANCH NAME</td>
+            <td>
+                <select name="Select branch" id="branch">
+                    <option value="-1">branch</option>
+                    <option value="1">CIVIL</option>
+                    <option value="2">COMPUTER SCIENCE AND ENGINEERING</option>
+                    <option value="3">ELECTRICAL AND ELECTRONIC ENGINEERING</option>
+                    <option value="4">ELECTRICAL AND COMMUNICATION ENGINEERING</option>
+                    <option value="5">MECHANICAL ENGINEERING</option>
+                    <option value="6">METTARUGICAL ENGINEERING</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+                <td>PHONE NUMBER</td>
+                <td><input type="text" name="NUMBER" pattern="[7-9]{1}[0-9]{9}" title="Enter 10 digit phone number" maxlength="10" /></td>
+        </tr>
+        <tr>
+                <td>ENROLLED COUESE</td>
+                <td>
+                    <select name="Select course" id="course">
+                        <option value="-1">course</option>
+                        <option value="1">C</option>
+                        <option value="2">C++</option>
+                        <option value="3">JAVA</option>
+                        <option value="4">HTML</option>
+                        <option value="5">ANDROID</option>
+                    </select>
+                </td>
+        </tr>
+        <tr>
+                <td>DATE OF TEST</td>
+                <td>
+                        <input type="date" id="date of test" name="date">
+                </td>
+        </tr>
+        <tr>
+                <td>WRITTEN TEST MARKS</td>
+                <td><input type="number" name="MARKS" min="50" max="100" maxlength="3" /></td>
+        </tr>
+        <tr>
+                <td colspan="2" align="center">
+                <input type="submit" value="Submit">&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <input type="reset" value="Reset">
+                </td>
+        </tr>
+
+
+    </table>
+</form>
+</body>
+</html>
